@@ -43,6 +43,21 @@ ul li a:hover {
     background: #fff;
     padding: 0.5rem;
 }
+.fa-bars{
+    display: none;
+}
+
+@media screen and (max-width:425px) {
+    *{
+        box-sizing: initial;
+    }
+    ul.nav-links{
+        flex-direction: column;
+    }
+    ul.nav-links li{
+        padding: 5px 0px;
+    }
+}
 
 div.hero-section {
     background: #304353;
@@ -85,6 +100,20 @@ div.hero-content-btn a {
     padding: 10px 30px;
     border-radius: 3px;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width:425px) {
+    div.hero-section{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 6rem;
+    }
+    div.hero-content-heading h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    }
+
 }
 
 div.hero-background {
@@ -130,6 +159,29 @@ div.hero-background-pos {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
+@media screen and (max-width:425px) {
+    div.hero-background{
+        width: 100vw;
+        padding: 1rem 6rem;
+    }
+    div.background{
+        padding: 0px;
+    }
+    div.background p{
+        padding: 0px 40px;
+        margin-top: -20px;
+
+    }
+    div.hero-background-pos{
+        top:84%;
+        left: 110%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+}
+
 div.snapshot-team {
     background: #f0f0f0;
     text-align: center;
@@ -148,6 +200,13 @@ div.snapshot-team p {
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
+}
+@media screen and (max-width:425px) {
+    div.snapshot-team{
+        width: 100%;
+        padding: 1rem 6rem;
+    }
+
 }
 
 div.snapshot-box {
@@ -198,7 +257,7 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
+
 }
 
 div.box1 h5 {
@@ -206,6 +265,16 @@ div.box1 h5 {
     padding-top: 2rem;
     color: #E44C65;
     font-size: 1rem;
+}
+@media screen and (max-width:425px) {
+    div.snapshot-box{
+        width: 100%;
+        padding: 1rem 6rem;
+    }
+    div.snapshot-box-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 div.gallery-section {
@@ -245,6 +314,12 @@ div.img {
 div.img img {
     width: 250px;
     height: 180px;
+}
+@media screen and (max-width:425px) {
+    div.gallery-section{
+        padding: 1rem 6rem;
+        width: 100vw;
+    }
 }
 
 div.footer {
@@ -344,4 +419,24 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+@media screen and (max-width:425px) {
+    div.footer{
+        width: 100vw;
+        padding: 1rem 6rem;
+    }
+    .footer-input input{
+        width: 52%;
+
+    }
+    textarea{
+        width: 100vw;
+        margin-top: -20px;
+    }
+    input[type=email]{
+        margin-right: auto;
+    }
+    h6{
+        margin-top: -30px;
+    }
 }
