@@ -43,6 +43,7 @@ ul li a:hover {
     background: #fff;
     padding: 0.5rem;
 }
+
 .fa-bars{
     display: none;
 }
@@ -53,9 +54,14 @@ ul li a:hover {
     }
     ul.nav-links{
         flex-direction: column;
+        padding: 5px 0px;
     }
     ul.nav-links li{
         padding: 5px 0px;
+    }
+    .fa-bars{
+        display: inline;
+        font-size: 4rem;
     }
 }
 
