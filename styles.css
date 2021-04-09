@@ -43,6 +43,9 @@ ul li a:hover {
     background: #fff;
     padding: 0.5rem;
 }
+.fa-warehouse{
+    font-size: 2rem;
+}
 
 .fa-bars{
     display: none;
@@ -53,15 +56,26 @@ ul li a:hover {
         box-sizing: initial;
     }
     ul.nav-links{
+        visibility: hidden;
         flex-direction: column;
         padding: 5px 0px;
+        justify-content: flex-end;   
     }
+
+    .fa-warehouse{
+    font-size: 4rem;
+}
+    
     ul.nav-links li{
         padding: 5px 0px;
+        
     }
     .fa-bars{
         display: inline;
+        float: left;
         font-size: 4rem;
+        margin-left: 10px;
+        
     }
 }
 
