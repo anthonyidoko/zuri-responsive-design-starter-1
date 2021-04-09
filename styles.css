@@ -217,7 +217,7 @@ div.hero-background-pos {
     div.hero-background{
         width: 100vw;
         padding: 1rem 6rem;
-        position: relative;
+        
     }
     div.background{
         padding: 0px;
@@ -230,7 +230,7 @@ div.hero-background-pos {
     }
     div.hero-background-pos{
         visibility: visible;
-        margin-left: 60px;
+        margin-left: 70px;
     }
 
 }
