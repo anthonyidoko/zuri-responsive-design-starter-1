@@ -120,20 +120,6 @@ div.hero-content-btn a {
     border-radius: 3px;
     letter-spacing: 2px;
 }
-
-@media screen and (max-width:425px) {
-    div.hero-section{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 6rem;
-    }
-    div.hero-content-heading h3 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    }
-
-}
 @media screen and (max-width:768px) {
     div.hero-section{
         width: 100vw;
@@ -145,6 +131,19 @@ div.hero-content-btn a {
     div.hero-content-heading h3 {
     font-size: 2rem;
     letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    div.hero-section{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 6rem;
+    }
+    div.hero-content-heading h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     }
 
 }
@@ -191,6 +190,29 @@ div.hero-background-pos {
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
+@media screen and (max-width:768px) {
+    div.hero-background{
+        width: 100vw;
+        padding: 1rem 6rem;
+        position: relative;
+    }
+    div.background{
+        padding: 0px;
+    }
+
+    div.background p{
+        padding: 0px 40px;
+        margin-top: -20px;
+        font-size: 1rem;
+    }
+    div.hero-background-pos{
+        visibility: visible;
+        position: absolute;
+        top: 25%;
+        left: 78%;
+    }
+
+}
 
 @media screen and (max-width:425px) {
     div.hero-background{
@@ -210,27 +232,6 @@ div.hero-background-pos {
     }
     div.hero-background-pos{
         visibility: hidden;
-    }
-
-}
-@media screen and (min-width:768px) {
-    div.hero-background{
-        width: 100vw;
-        padding: 1rem 6rem;
-        
-    }
-    div.background{
-        padding: 0px;
-    }
-
-    div.background p{
-        padding: 0px 40px;
-        margin-top: -20px;
-        font-size: 1rem;
-    }
-    div.hero-background-pos{
-        visibility: visible;
-        margin-left: 70px;
     }
 
 }
