@@ -74,8 +74,7 @@ ul li a:hover {
         display: inline;
         float: left;
         font-size: 4rem;
-        margin-left: 10px;
-        
+        margin-left: 10px;        
     }
 }
 
@@ -135,6 +134,20 @@ div.hero-content-btn a {
     }
 
 }
+@media screen and (max-width:768px) {
+    div.hero-section{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 6rem;
+    }
+
+    div.hero-content-heading h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    }
+
+}
 
 div.hero-background {
     background: #f0f0f0;
@@ -183,21 +196,44 @@ div.hero-background-pos {
     div.hero-background{
         width: 100vw;
         padding: 1rem 6rem;
+       
     }
+    
     div.background{
-        padding: 0px;
+        padding: 0;
+        height: fit-content;
+        
     }
     div.background p{
         padding: 0px 40px;
         margin-top: -20px;
+        font-size: 1rem;
+        padding-bottom: 30px;
 
     }
     div.hero-background-pos{
-        top:84%;
-        left: 110%;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
+        visibility: hidden;
+    }
+
+}
+@media screen and (min-width:768px) {
+    div.hero-background{
+        width: 100vw;
+        padding: 1rem 6rem;
+        position: relative;
+    }
+    div.background{
+        padding: 0px;
+    }
+
+    div.background p{
+        padding: 0px 40px;
+        margin-top: -20px;
+        font-size: 1rem;
+    }
+    div.hero-background-pos{
+        visibility: visible;
+        margin-left: 60px;
     }
 
 }
